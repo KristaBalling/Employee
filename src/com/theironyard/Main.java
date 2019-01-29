@@ -49,7 +49,7 @@ public class Main {
        Random random = new Random();
         Supplier<Integer> randomSupplier = () -> random.nextInt(1000);
        for(int i=0; i<10; i++) {
-           System.out.println(random.nextInt(1000));
+           System.out.println(randomSupplier.get());
        }
     }
 
