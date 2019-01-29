@@ -51,6 +51,11 @@ public class Main {
        for(int i=0; i<10; i++) {
            System.out.println(randomSupplier.get());
        }
+
+       employees.forEach(employee -> {
+           String lastName = employee.getName().substring(employee.getName().indexOf(' ') + 1);
+           System.out.println("Last Name is: " + lastName);
+       });
     }
 
         public static void printEmployeesByAge(List<Employee> employees,
